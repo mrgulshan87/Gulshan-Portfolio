@@ -1,11 +1,10 @@
-Update the Experience section to show only the Zepto role.
+Update the hero tagline and About section copy to match the new text provided.
 
-## Changes
-- Edit `src/components/portfolio/Experience.tsx`.
-- Remove the `Country Delight` and `Leads Ark` entries from the `ROLES` array.
-- Keep the `Rider Shift In-Charge — Zepto` role and its existing bullets.
-- Adjust layout: convert the alternating two-column timeline to a single centered card so the lone entry still looks balanced and intentional. Remove the timeline connector/dot when there is only one item, or keep a minimal centered version.
-- Ensure the section heading, subtitle, and spacing remain intact.
+Changes:
+1. In `src/components/portfolio/Hero.tsx`, replace the existing tagline paragraph with:
+   "I'm Gulshan Kumar Kushwaha, A Data Analyst turning raw data into actionable insights and smarter business decisions. Based in Hyderabad, India."
+2. In `src/components/portfolio/About.tsx`, replace the two existing paragraphs with:
+   - "I'm a Data Analytics professional currently pursuing a Postgraduate Program in Data Science & Analytics with GenAI, with hands-on skills in Excel, SQL, Python, Statistics, and Power BI."
+   - "I bring real-world operations experience from Zepto, where I managed 160+ riders and supported daily operations handling 1,100+ orders. Through data-driven operational management, I helped reduce RTO from 17% to 8%, improve on-time delivery from 82% to 96%, and increase rider productivity by 15%."
 
-## Verification
-- Run the dev build check and visually inspect the Experience section to confirm only the Zepto entry appears, centered, with no orphaned timeline artifacts.
+After the edits, run a build check to verify the site compiles.
