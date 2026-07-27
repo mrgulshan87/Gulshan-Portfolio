@@ -26,8 +26,11 @@ export function Experience() {
 
         <div className="mt-16 rounded-2xl border border-border bg-card p-8 text-center sm:p-10">
           <h3 className="text-2xl font-bold sm:text-3xl">{ROLE.role}</h3>
+          <div className="mt-1 text-sm font-medium text-muted-foreground">
+            {ROLE.subtitle}
+          </div>
           <div className="mt-2 text-sm font-medium uppercase tracking-widest text-primary">
-            {ROLE.company}
+            {ROLE.company} | {ROLE.location}
           </div>
           <ul className="mx-auto mt-6 max-w-xl space-y-3 text-sm leading-relaxed text-muted-foreground">
             {ROLE.bullets.map((b) => (
