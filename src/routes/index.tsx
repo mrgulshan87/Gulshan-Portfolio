@@ -9,6 +9,7 @@ import { Experience } from "@/components/portfolio/Experience";
 import { CertificationsEducation } from "@/components/portfolio/CertificationsEducation";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
+import { ParticleBackground } from "@/components/portfolio/ParticleBackground";
 
 const TITLE = "Gulshan Kumar Kushwaha — Data Analyst | BI & GenAI Analytics";
 const DESC =
@@ -32,9 +33,14 @@ export const Route = createFileRoute("/")({
 
 function Portfolio() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="relative min-h-screen overflow-x-hidden bg-background text-foreground">
+      <ParticleBackground />
+      <div className="pointer-events-none fixed inset-0 z-0 opacity-40">
+        <div className="absolute -top-1/4 left-1/4 h-[60vw] w-[60vw] rounded-full bg-primary/10 blur-[120px]" />
+        <div className="absolute bottom-0 right-1/4 h-[50vw] w-[50vw] rounded-full bg-primary/5 blur-[100px]" />
+      </div>
       <Nav />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Skills />
