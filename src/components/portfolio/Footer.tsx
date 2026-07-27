@@ -10,7 +10,7 @@ export function Footer() {
         </div>
         <div className="flex items-center gap-4">
           <a
-            href="https://linkedin.com/in/gulshan-kumar-kushwaha-b62282214"
+            href="https://www.linkedin.com/in/gulshan-kumar-kushwaha-b62282214"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
