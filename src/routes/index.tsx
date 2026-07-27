@@ -9,6 +9,7 @@ import { Experience } from "@/components/portfolio/Experience";
 import { CertificationsEducation } from "@/components/portfolio/CertificationsEducation";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
+import { ParticleBackground } from "@/components/portfolio/ParticleBackground";
 
 const TITLE = "Gulshan Kumar Kushwaha — Data Analyst | BI & GenAI Analytics";
 const DESC =
