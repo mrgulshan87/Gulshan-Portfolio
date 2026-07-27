@@ -31,7 +31,7 @@ export function Hero() {
           based in Hyderabad, India.
         </p>
         <p className="mt-4 text-sm font-medium tracking-widest text-muted-foreground">
-          EXCEL · SQL · PYTHON · POWER BI · GENAI
+          EXCEL · SQL · PYTHON · POWER BI · MACHINE LEARNING · DEEP LEARNING · STATISTICS · GENAI
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
