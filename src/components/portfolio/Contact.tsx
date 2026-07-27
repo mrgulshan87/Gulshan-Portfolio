@@ -86,12 +86,12 @@ export function Contact() {
             </Detail>
             <Detail icon={<Linkedin size={18} />} label="LinkedIn">
               <a
-                href="https://linkedin.com/in/gulshan-kumar-kushwaha-b62282214"
+                href="https://www.linkedin.com/in/gulshan-kumar-kushwaha-b62282214"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-primary transition-colors"
               >
-                /in/gulshan-kumar-kushwaha
+                /in/gulshan-kumar-kushwaha-b62282214
               </a>
             </Detail>
           </div>
