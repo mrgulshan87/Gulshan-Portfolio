@@ -11,7 +11,7 @@ const COUNTERS = [
 const TAGS = [
   {
     heading: "Programming & ML",
-    items: ["Statistics", "Hypothesis Testing", "scikit-learn", "Random Forest", "NLP", "PCA"],
+    items: ["Machine Learning", "Deep Learning", "Statistics", "Hypothesis Testing", "scikit-learn", "Random Forest", "NLP", "PCA"],
   },
   {
     heading: "GenAI & Productivity",
