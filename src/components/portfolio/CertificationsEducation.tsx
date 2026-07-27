@@ -2,6 +2,9 @@ import { Award, GraduationCap } from "lucide-react";
 import { SectionTitle } from "./SectionTitle";
 
 const CERTS = [
+  "Deloitte Australia - Data Analytics Job Simulation — Forage",
+  "HackerRank SQL (Intermediate) — HackerRank",
+  "HackerRank Python (Basic) — HackerRank",
   "Smart Coder (DSA) — Smart Interviews",
   "Programming Essentials in Python & C — Cisco",
   "Python 3.4.3 Training — IIT Bombay Spoken Tutorial",
