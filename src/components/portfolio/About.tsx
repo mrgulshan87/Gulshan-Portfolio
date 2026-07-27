@@ -25,14 +25,15 @@ export function About() {
             We can turn data into <span className="text-primary">decisions</span>.
           </h3>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-            I'm an enthusiastic, growth-driven learner currently pursuing a Postgraduate
-            Program in Data Science &amp; Analytics with GenAI, building hands-on skills in
-            Excel, SQL, Python, Statistics, and Power BI.
+            I'm a Data Analytics professional currently pursuing a Postgraduate Program in
+            Data Science &amp; Analytics with GenAI, with hands-on skills in Excel, SQL, Python,
+            Statistics, and Power BI.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            I bring real-world operations experience — handling live problems, coordinating
-            teams, and driving process efficiency — and now apply that same structured,
-            results-oriented mindset to data-driven decision-making.
+            I bring real-world operations experience from Zepto, where I managed 160+ riders
+            and supported daily operations handling 1,100+ orders. Through data-driven
+            operational management, I helped reduce RTO from 17% to 8%, improve on-time
+            delivery from 82% to 96%, and increase rider productivity by 15%.
           </p>
 
           <div className="mt-8 space-y-3">

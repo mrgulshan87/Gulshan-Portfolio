@@ -27,8 +27,8 @@ export function Hero() {
           Gulshan<span className="text-primary">.</span>
         </h1>
         <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-foreground/90 sm:text-xl">
-          I'm Gulshan Kumar Kushwaha, a Data Analyst turning raw data into actionable
-          insights and business decisions — based in Hyderabad, India.
+          I'm Gulshan Kumar Kushwaha, A Data Analyst turning raw data into actionable
+          insights and smarter business decisions. Based in Hyderabad, India.
         </p>
         <p className="mt-4 text-sm font-medium tracking-widest text-muted-foreground">
           EXCEL · SQL · PYTHON · STATISTICS · POWER BI · ML · DL · GENAI
