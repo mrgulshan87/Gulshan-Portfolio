@@ -65,6 +65,12 @@ export function Projects() {
               <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                 {p.summary}
               </p>
+              <p className="mt-2 max-w-lg text-sm leading-relaxed text-muted-foreground opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                <span className="font-semibold uppercase tracking-widest text-primary text-[10px]">
+                  Takeaway ·{" "}
+                </span>
+                {p.takeaway}
+              </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {p.tags.map((t) => (
                   <span
