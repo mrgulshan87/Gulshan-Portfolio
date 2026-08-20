@@ -21,6 +21,8 @@ const PROJECTS = [
     tags: ["Python", "Flask", "MySQL", "HTML/CSS/JS"],
     summary:
       "Modeled relational data for real-time station search, authentication and booking history; delivered route-based station suggestions.",
+    takeaway:
+      "Real-time availability and route optimization are the key UX levers for location-based apps.",
     image: evChargingImg,
     link: "#",
   },
