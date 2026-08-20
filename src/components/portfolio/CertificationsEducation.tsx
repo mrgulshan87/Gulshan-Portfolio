@@ -2,6 +2,7 @@ import { Award, GraduationCap } from "lucide-react";
 import { SectionTitle } from "./SectionTitle";
 
 const CERTS = [
+  "Introduction to Data Analysis — Alison",
   "Deloitte Australia - Data Analytics Job Simulation — Forage",
   "HackerRank SQL (Intermediate) — HackerRank",
   "HackerRank Python (Basic) — HackerRank",

@@ -10,6 +10,8 @@ const PROJECTS = [
     tags: ["Machine Learning", "Random Forest", "NLP", "PCA"],
     summary:
       "Engineered features from profile attributes (followers, activity patterns) and built a classifier that achieved a 94% F1-score.",
+    takeaway:
+      "Behavioral and activity-based features add strong predictive signal for trust-and-safety use cases.",
     image: fakeProfileImg,
     link: "#",
   },
@@ -19,6 +21,8 @@ const PROJECTS = [
     tags: ["Python", "Flask", "MySQL", "HTML/CSS/JS"],
     summary:
       "Modeled relational data for real-time station search, authentication and booking history; delivered route-based station suggestions.",
+    takeaway:
+      "Real-time availability and route optimization are the key UX levers for location-based apps.",
     image: evChargingImg,
     link: "#",
   },
@@ -60,6 +64,12 @@ export function Projects() {
               </div>
               <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                 {p.summary}
+              </p>
+              <p className="mt-2 max-w-lg text-sm leading-relaxed text-muted-foreground opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                <span className="font-semibold uppercase tracking-widest text-primary text-[10px]">
+                  Takeaway ·{" "}
+                </span>
+                {p.takeaway}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {p.tags.map((t) => (

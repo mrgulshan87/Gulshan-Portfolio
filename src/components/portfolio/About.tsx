@@ -27,7 +27,9 @@ export function About() {
           <p className="mt-6 text-base leading-relaxed text-muted-foreground">
             I'm a Data Analytics professional currently pursuing a Postgraduate Program in
             Data Science &amp; Analytics with GenAI, with hands-on skills in Excel, SQL, Python,
-            Statistics, and Power BI.
+            Statistics, Power BI and Machine Learning — applying Random Forest, NLP and PCA
+            across real projects, and using GenAI tools like ChatGPT and Copilot to accelerate
+            analysis and reporting.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             I bring real-world operations experience from Zepto, where I managed 160+ riders
