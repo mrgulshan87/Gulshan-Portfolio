@@ -19,6 +19,15 @@ export function Footer() {
             <Linkedin size={18} />
           </a>
           <a
+            href="https://github.com/mrgulshan87"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            className="transition-colors hover:text-primary"
+          >
+            <Github size={18} />
+          </a>
+          <a
             href="mailto:gulshankumarkushwaha28@gmail.com"
             aria-label="Email"
             className="transition-colors hover:text-primary"

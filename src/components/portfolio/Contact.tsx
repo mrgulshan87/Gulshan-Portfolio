@@ -94,6 +94,16 @@ export function Contact() {
                 /in/gulshan-kumar-kushwaha-b62282214
               </a>
             </Detail>
+            <Detail icon={<Github size={18} />} label="GitHub">
+              <a
+                href="https://github.com/mrgulshan87"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                /mrgulshan87
+              </a>
+            </Detail>
           </div>
         </div>
       </div>
