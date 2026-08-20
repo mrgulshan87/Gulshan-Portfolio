@@ -10,6 +10,15 @@ const COUNTERS = [
 
 const TAGS = [
   {
+    heading: "Data & BI Tools",
+    items: [
+      "Excel (Pivot Tables, VLOOKUP, INDEX-MATCH)",
+      "SQL (Joins, Aggregations)",
+      "Python (Pandas, NumPy)",
+      "Power BI / Tableau",
+    ],
+  },
+  {
     heading: "Programming & ML",
     items: ["Machine Learning", "Deep Learning", "Statistics", "Hypothesis Testing", "scikit-learn", "Random Forest", "NLP", "PCA"],
   },

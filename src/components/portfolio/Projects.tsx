@@ -10,6 +10,8 @@ const PROJECTS = [
     tags: ["Machine Learning", "Random Forest", "NLP", "PCA"],
     summary:
       "Engineered features from profile attributes (followers, activity patterns) and built a classifier that achieved a 94% F1-score.",
+    takeaway:
+      "Behavioral and activity-based features add strong predictive signal for trust-and-safety use cases.",
     image: fakeProfileImg,
     link: "#",
   },
