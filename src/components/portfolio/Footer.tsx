@@ -1,4 +1,4 @@
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, Github } from "lucide-react";
 
 export function Footer() {
   return (
@@ -17,6 +17,15 @@ export function Footer() {
             className="transition-colors hover:text-primary"
           >
             <Linkedin size={18} />
+          </a>
+          <a
+            href="https://github.com/mrgulshan87"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            className="transition-colors hover:text-primary"
+          >
+            <Github size={18} />
           </a>
           <a
             href="mailto:gulshankumarkushwaha28@gmail.com"

@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import { SectionTitle } from "./SectionTitle";
 import { toast } from "sonner";
 
@@ -92,6 +92,16 @@ export function Contact() {
                 className="hover:text-primary transition-colors"
               >
                 /in/gulshan-kumar-kushwaha-b62282214
+              </a>
+            </Detail>
+            <Detail icon={<Github size={18} />} label="GitHub">
+              <a
+                href="https://github.com/mrgulshan87"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                /mrgulshan87
               </a>
             </Detail>
           </div>
