@@ -24,7 +24,7 @@ const PROJECTS = [
     takeaway:
       "Real-time availability and route optimization are the key UX levers for location-based apps.",
     image: evChargingImg,
-    link: "#",
+    link: "https://github.com/mrgulshan87/EV-Charging-Station-Finder",
   },
 ];
 
