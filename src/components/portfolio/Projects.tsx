@@ -13,7 +13,7 @@ const PROJECTS = [
     takeaway:
       "Behavioral and activity-based features add strong predictive signal for trust-and-safety use cases.",
     image: fakeProfileImg,
-    link: "#",
+    link: "https://github.com/mrgulshan87/Fake-Profile-Detection",
   },
   {
     title: "EV Charging Station Finder",
