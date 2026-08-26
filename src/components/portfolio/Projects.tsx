@@ -51,8 +51,9 @@ export function Projects() {
           <a
             key={p.title}
             href={p.link}
+            aria-label={`View ${p.title} project on GitHub`}
             target={p.link.startsWith("http") ? "_blank" : undefined}
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="group relative block overflow-hidden bg-surface"
           >
             <div className="aspect-[4/3] overflow-hidden">
