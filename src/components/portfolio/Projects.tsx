@@ -1,10 +1,23 @@
 import fakeProfileImg from "@/assets/project-fake-profile.jpg";
 import evChargingImg from "@/assets/project-ev-charging.jpg";
+import bankLoanImg from "@/assets/project-bank-loan.jpg";
 import { ArrowUpRight } from "lucide-react";
 import { SectionTitle } from "./SectionTitle";
 
 const PROJECTS = [
   {
+    title: "Bank Loan Report Dashboard",
+    tagline: "Capstone Project 1 · End-to-end loan analytics",
+    tags: ["Excel", "SQL", "Python", "Power BI"],
+    summary:
+      "Cleaned and validated a 38,576-record LendingClub-style dataset, cross-checked KPIs (funded amount, DTI, interest rate, Good vs. Bad Loan) and built a 3-page interactive Power BI report with state, grade, purpose and term filters.",
+    takeaway:
+      "86.2% Good Loan rate across $435.8M funded and $473.1M received, with MTD/MoM trend tracking — ready to extend into predictive default-risk modeling.",
+    image: bankLoanImg,
+    link: "https://github.com/mrgulshan87",
+  },
+  {
+
     title: "Fake Profile Detection",
     tagline: "Detecting fake social media profiles with ML",
     tags: ["Machine Learning", "Random Forest", "NLP", "PCA"],
