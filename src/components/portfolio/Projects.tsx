@@ -14,7 +14,7 @@ const PROJECTS = [
     takeaway:
       "86.2% Good Loan rate across $435.8M funded and $473.1M received, with MTD/MoM trend tracking — ready to extend into predictive default-risk modeling.",
     image: bankLoanImg,
-    link: "https://github.com/mrgulshan87",
+    link: "https://github.com/mrgulshan87/Bank-Loan-Report-Dashboard",
   },
   {
 
