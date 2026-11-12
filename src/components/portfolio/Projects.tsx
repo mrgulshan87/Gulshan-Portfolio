@@ -1,6 +1,7 @@
 import fakeProfileImg from "@/assets/project-fake-profile.jpg";
 import evChargingImg from "@/assets/project-ev-charging.jpg";
 import bankLoanImg from "@/assets/project-bank-loan.jpg";
+import wellbeingIQImg from "@/assets/project-wellbeingiq.jpg";
 import { ArrowUpRight } from "lucide-react";
 import { SectionTitle } from "./SectionTitle";
 
@@ -15,6 +16,17 @@ const PROJECTS = [
       "86.2% Good Loan rate across $435.8M funded and $473.1M received, with MTD/MoM trend tracking — ready to extend into predictive default-risk modeling.",
     image: bankLoanImg,
     link: "https://github.com/mrgulshan87/Bank-Loan-Report-Dashboard",
+  },
+  {
+    title: "WellbeingIQ",
+    tagline: "Capstone Project 2 · Student wellness analytics",
+    tags: ["Python", "Machine Learning", "SHAP", "Streamlit", "GenAI"],
+    summary:
+      "Built an interactive educational prototype exploring how digital habits, sleep, activity, academic pressure, and social support relate to student-wellness categories, with explainable predictions and optional AI-powered guidance.",
+    takeaway:
+      "A responsible, end-to-end analytics workflow using synthetic data; predictions are educational estimates, not clinical assessments.",
+    image: wellbeingIQImg,
+    link: "https://github.com/mrgulshan87/WellbeingIQ-AI-Powered-Student-Wellness-Prediction-and-Guidance-System",
   },
   {
 
