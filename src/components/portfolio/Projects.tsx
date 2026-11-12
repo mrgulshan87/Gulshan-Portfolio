@@ -66,34 +66,38 @@ export function Projects() {
             aria-label={`View ${p.title} project on GitHub`}
             target={p.link.startsWith("http") ? "_blank" : undefined}
             rel="noopener noreferrer"
-            className="group relative block overflow-hidden bg-surface"
+            className="group block overflow-hidden border border-border bg-background transition-colors hover:border-primary/60"
           >
-            <div className="aspect-[4/3] overflow-hidden">
+            <div className="relative aspect-[4/3] overflow-hidden bg-background">
               <img
                 src={p.image}
                 alt={p.title}
                 width={1200}
                 height={900}
                 loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="h-full w-full object-cover brightness-50 transition-transform duration-700 group-hover:scale-105"
               />
-            </div>
-            <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-background via-background/70 to-transparent p-6 opacity-100 transition-opacity lg:p-8">
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h3 className="text-2xl font-bold sm:text-3xl">{p.title}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{p.tagline}</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/45 to-background/10" />
+              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 sm:p-7">
+                <div className="min-w-0">
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-primary">
+                    {p.tagline.split(" · ")[0]}
+                  </p>
+                  <h3 className="break-words text-2xl font-bold leading-tight text-foreground sm:text-3xl">
+                    {p.title}
+                  </h3>
                 </div>
-                <span className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-foreground/30 text-foreground transition-all group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-foreground/50 bg-background/70 text-foreground transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
                   <ArrowUpRight size={18} />
                 </span>
               </div>
-              <p className="mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                {p.summary}
-              </p>
-              <p className="mt-2 max-w-lg text-sm leading-relaxed text-muted-foreground opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                <span className="font-semibold uppercase tracking-widest text-primary text-[10px]">
-                  Takeaway ·{" "}
+            </div>
+            <div className="space-y-4 p-5 sm:p-7">
+              <p className="text-sm font-medium text-foreground/80">{p.tagline.split(" · ")[1]}</p>
+              <p className="text-sm leading-relaxed text-muted-foreground">{p.summary}</p>
+              <p className="border-l-2 border-primary pl-3 text-sm leading-relaxed text-muted-foreground">
+                <span className="mr-2 text-[10px] font-semibold uppercase tracking-widest text-primary">
+                  Takeaway
                 </span>
                 {p.takeaway}
               </p>
