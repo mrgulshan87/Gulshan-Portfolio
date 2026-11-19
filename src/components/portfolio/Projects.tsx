@@ -55,10 +55,10 @@ const PROJECTS = [
 
 export function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+    <section id="projects" className="mx-auto max-w-6xl px-6 py-16 lg:px-10 lg:py-24">
       <SectionTitle>Portfolio</SectionTitle>
 
-      <div className="mt-16 grid gap-8 md:grid-cols-2 lg:gap-10">
+      <div className="mt-10 grid gap-5 md:grid-cols-2">
         {PROJECTS.map((p) => (
           <a
             key={p.title}
@@ -66,9 +66,9 @@ export function Projects() {
             aria-label={`View ${p.title} project on GitHub`}
             target={p.link.startsWith("http") ? "_blank" : undefined}
             rel="noopener noreferrer"
-            className="group block overflow-hidden border border-border bg-background transition-colors hover:border-primary/60"
+            className="group flex flex-col overflow-hidden border border-border bg-background/70 transition-colors hover:border-primary/60 lg:flex-row"
           >
-            <div className="relative aspect-[4/3] overflow-hidden bg-background">
+            <div className="relative aspect-[16/9] shrink-0 overflow-hidden bg-background lg:aspect-auto lg:w-[34%]">
               <img
                 src={p.image}
                 alt={p.title}
@@ -78,34 +78,32 @@ export function Projects() {
                 className="h-full w-full object-cover brightness-50 transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/45 to-background/10" />
-              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 sm:p-7">
-                <div className="min-w-0">
-                  <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-primary">
-                    {p.tagline.split(" · ")[0]}
-                  </p>
-                  <h3 className="break-words text-2xl font-bold leading-tight text-foreground sm:text-3xl">
-                    {p.title}
-                  </h3>
-                </div>
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-foreground/50 bg-background/70 text-foreground transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
+              <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4">
+                <p className="min-w-0 text-xs font-semibold uppercase tracking-widest text-primary">
+                  {p.tagline.split(" · ")[0]}
+                </p>
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-foreground/50 bg-background/70 text-foreground transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
                   <ArrowUpRight size={18} />
                 </span>
               </div>
             </div>
-            <div className="space-y-4 p-5 sm:p-7">
-              <p className="text-sm font-medium text-foreground/80">{p.tagline.split(" · ")[1]}</p>
-              <p className="text-sm leading-relaxed text-muted-foreground">{p.summary}</p>
-              <p className="border-l-2 border-primary pl-3 text-sm leading-relaxed text-muted-foreground">
-                <span className="mr-2 text-[10px] font-semibold uppercase tracking-widest text-primary">
+            <div className="min-w-0 space-y-2.5 p-4 sm:p-5">
+              <h3 className="break-words text-lg font-bold leading-tight text-foreground sm:text-xl">
+                {p.title}
+              </h3>
+              <p className="text-xs font-medium text-foreground/80">{p.tagline.split(" · ")[1]}</p>
+              <p className="text-xs leading-relaxed text-muted-foreground">{p.summary}</p>
+              <p className="border-l-2 border-primary pl-2.5 text-xs leading-relaxed text-muted-foreground">
+                <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-widest text-primary">
                   Takeaway
                 </span>
                 {p.takeaway}
               </p>
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5 pt-1">
                 {p.tags.map((t) => (
                   <span
                     key={t}
-                    className="rounded-full border border-border bg-background/70 px-3 py-1 text-[10px] font-medium uppercase tracking-widest text-muted-foreground backdrop-blur"
+                    className="rounded-full border border-border px-2 py-0.5 text-[9px] font-medium uppercase tracking-widest text-muted-foreground"
                   >
                     {t}
                   </span>
@@ -116,7 +114,7 @@ export function Projects() {
         ))}
       </div>
 
-      <p className="mx-auto mt-12 max-w-2xl text-center text-sm text-muted-foreground">
+      <p className="mx-auto mt-8 max-w-2xl text-center text-sm text-muted-foreground">
         More coursework projects — MegaMart Sales Dashboard, Social Media Engagement Analysis,
         Accident Analysis Dashboard — coming soon.
       </p>
