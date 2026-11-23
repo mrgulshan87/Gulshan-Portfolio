@@ -1,4 +1,5 @@
 import heroPortrait from "@/assets/hero-portrait.jpg";
+import resumeAsset from "@/assets/Gulshan_Kumar_Kushwaha_Resume.pdf.asset.json";
 import { ArrowDown, Download } from "lucide-react";
 
 export function Hero() {
@@ -42,8 +43,8 @@ export function Hero() {
             View Projects
           </button>
           <a
-            href="/Gulshan_Kumar_Kushwaha_Resume.pdf"
-            download
+            href={resumeAsset.url}
+            download="Gulshan_Kumar_Kushwaha_Resume.pdf"
             className="inline-flex items-center gap-2 rounded-full border border-foreground/30 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-foreground transition-all hover:border-foreground hover:bg-foreground/5"
           >
             <Download size={16} /> Download Resume

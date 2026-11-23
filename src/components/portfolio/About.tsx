@@ -1,4 +1,5 @@
 import heroPortrait from "@/assets/hero-portrait.jpg";
+import resumeAsset from "@/assets/Gulshan_Kumar_Kushwaha_Resume.pdf.asset.json";
 import { Download, MapPin, GraduationCap } from "lucide-react";
 import { SectionTitle } from "./SectionTitle";
 
@@ -50,8 +51,8 @@ export function About() {
           </div>
 
           <a
-            href="/Gulshan_Kumar_Kushwaha_Resume.pdf"
-            download
+            href={resumeAsset.url}
+            download="Gulshan_Kumar_Kushwaha_Resume.pdf"
             className="mt-10 inline-flex items-center gap-2 rounded-full border border-foreground/40 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-foreground transition-all hover:border-primary hover:text-primary"
           >
             <Download size={16} /> Download My CV
